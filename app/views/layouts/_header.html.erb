@@ -1,0 +1,10 @@
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="<%= about_path %>" class="nav-link">Про проект</a></li>
+        <li class="nav-item"><a href="<%= new_user_path %>" class="nav-link">Створити користувача</a></li>
+        <li class="nav-item"><a href="<%= users_path %>" class="nav-link">Показати всіх користувачів</a></li>
+        <li class="nav-item"><%= link_to "Видалити всіх користувачів", remove_all_path, :confirm => "Are you sure?", class: "nav-link", :method => :delete %></li>
+      </ul>
+    </header>
+</div>
